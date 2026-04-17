@@ -6,6 +6,7 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4; /*cor em hexadecimal*/
+    padding: 20px;/*alterei o padding 16/04*/
 }
 header{
     background-color: #c0c0c0;/*cinza cocô kkk*/
@@ -13,10 +14,15 @@ header{
     text-align: center; /*centraliza o texto*/
 }
 nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
-    color: blue;
-    text-decoration: none;
+    color: black;
+    text-decoration: none; /*tirei toda a decoração dop texto*/
     padding: 4px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px; /*radius é a borda arredondada*/
+    background-color: #ccc;
+    border-bottom: #d8d;
 }
+nav a:hover{color:red;}
 .bloco{ /*declaração de class, a class procede de "."*/
     background-color: #cccc;
     color: black;
@@ -30,7 +36,7 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     display: flex;
     flex-wrap: wrap; /*Não vai deixar estourar os limites do site*/
     gap: 24px; /*espaço entre elementos dentro do id*/
-    justify-content: flex-start; /*reforçando que ele vai estar flexivel*/
+    justify-content: center; /* centraliza horizontal*//*reforçando que ele vai estar flexivel*/
     padding: 20px;
 }
 .foto{
@@ -47,4 +53,13 @@ nav a{ /*nav navigation a a, de link, vou trabalhar só no link*/
     height: 220px;
     object-fit: cover; /*efeito de sobrepor*/
     display: block;
+}
+.foto:hover{
+    transform: scale(1.50) rotate(2deg); /*dois degrais*/
+}
+.legenda{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace; 
+    font-size: 18px;
+    font-style: italic;
 }
